@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { MainRoutingModule } from './main-rouring.module';
-import { FeedComponent } from './components/feed/feed.component';
+import { NgModule } from '@angular/core'
+import { CommonModule } from '@angular/common'
+import { MainRoutingModule } from './main-rouring.module'
+import { FeedComponent } from './components/feed/feed.component'
 
 @NgModule({
   declarations: [FeedComponent],

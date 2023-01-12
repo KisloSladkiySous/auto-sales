@@ -1,0 +1,54 @@
+{
+  "editor.fontSize": 13,
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  "[javascript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "files.autoSaveDelay": 3000,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.exclude": {
+      "**/.classpath": true,
+      "**/.project": true,
+      "**/.settings": true,
+      "**/.factorypath": true
+  },
+  "java.errors.incompleteClasspath.severity": "ignore",
+  "[java]": {
+      "editor.defaultFormatter": "redhat.java"
+  },
+  "C_Cpp.updateChannel": "Insiders",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "files.autoSave": "onWindowChange",
+  "java.semanticHighlighting.enabled": true,
+  "gitlens.views.repositories.files.layout": "list",
+  "[typescript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "editor.maxTokenizationLineLength": 100000,
+  "prettier.jsxSingleQuote": true,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.editorAssociations": [
+      {
+          "viewType": "jupyter.notebook.ipynb",
+          "filenamePattern": "*.ipynb"
+      }
+  ],
+  "angular.experimental-ivy": true,
+  "js/ts.implicitProjectConfig.checkJs": true,
+  "eslint.validate": ["javascript", "typescript", "html"],
+  "eslint.options": {
+
+      "extensions": [".js", ".ts", "html"]
+  },
+  "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+  },
+  "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.autoComplete.extraPaths": [
+  
+  ]
+}

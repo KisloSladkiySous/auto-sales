@@ -13,6 +13,7 @@ module.exports = {
         },
         extends: [
           "plugin:@angular-eslint/recommended",
+          "airbnb-base",
           "airbnb-typescript/base",
           "plugin:prettier/recommended"
         ],
@@ -27,7 +28,8 @@ module.exports = {
           "@typescript-eslint/lines-between-class-members": ["off"],
           "no-console": "off",
           "prettier/prettier": ["error", { "endOfLine": "auto" }],
-          "no-underscore-dangle": ["error", { "allowAfterThis": true }]
+          "no-underscore-dangle": ["error", { "allowAfterThis": true }],
+        
         }
       },
       {
@@ -35,7 +37,8 @@ module.exports = {
         extends: ["plugin:@angular-eslint/template/recommended"],
         rules: {
           "linebreak-style": "off",
-          "@angular-eslint/template/no-negated-async": "off"
+          "@angular-eslint/template/no-negated-async": "off",
+          "import/no-extraneous-dependencies": ["error", {"devDependencies": true, "optionalDependencies": false, "peerDependencies": false}]
         }
       },
       {
@@ -46,13 +49,15 @@ module.exports = {
           "@angular-eslint/no-empty-lifecycle-method": "off",
           "@angular-eslint/no-input-rename": "off",
           "@angular-eslint/no-output-native": "off",
-          "@angular-eslint/component-class-suffix": "off"
+          "@angular-eslint/component-class-suffix": "off",
+          "import/no-extraneous-dependencies": ["error", {"devDependencies": true, "optionalDependencies": false, "peerDependencies": false}],
+          'class-methods-use-this': 'off',
         }
       },
       {
         files: ['src/**/*.spec.ts', 'src/**/*.d.ts'],
         parserOptions: {
-          project: './src/tsconfig.spec.json',
+          project: './tsconfig.spec.json',
         },
         extends: ['plugin:jasmine/recommended'],
         plugins: ['jasmine'],

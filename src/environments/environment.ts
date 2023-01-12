@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  apiUrl:'https://saney00rus.pythonanywhere.com'
-};
+  apiUrl: 'https://saney00rus.pythonanywhere.com',
+}
 
 /*
  * For easier debugging in development mode, you can import the following file

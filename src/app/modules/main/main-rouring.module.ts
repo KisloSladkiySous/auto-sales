@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { FeedComponent } from './components/feed/feed.component';
+import { NgModule } from '@angular/core'
+import { RouterModule, Routes } from '@angular/router'
+import { FeedComponent } from './components/feed/feed.component'
 
 const routes: Routes = [
   {
@@ -8,10 +8,10 @@ const routes: Routes = [
     component: FeedComponent,
   },
   { path: '**', redirectTo: '' },
-];
+]
 
 @NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-  })
-export class MainRoutingModule { }
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule],
+})
+export class MainRoutingModule {}
