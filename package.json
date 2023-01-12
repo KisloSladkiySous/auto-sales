@@ -6,11 +6,23 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "lint": "ng lint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged --relative"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --fix"
+    ]
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "^15.0.4",
+    "@angular/cdk": "^15.0.0",
     "@angular/common": "^15.0.4",
     "@angular/compiler": "^15.0.4",
     "@angular/core": "^15.0.4",
@@ -18,23 +30,55 @@
     "@angular/platform-browser": "^15.0.4",
     "@angular/platform-browser-dynamic": "^15.0.4",
     "@angular/router": "^15.0.4",
+    "@taiga-ui/addon-charts": "^3.14.0",
+    "@taiga-ui/addon-commerce": "^3.14.0",
+    "@taiga-ui/addon-doc": "^3.14.0",
+    "@taiga-ui/addon-editor": "^3.14.0",
+    "@taiga-ui/addon-preview": "^3.14.0",
+    "@taiga-ui/addon-table": "^3.14.0",
+    "@taiga-ui/addon-tablebars": "^3.14.0",
+    "@taiga-ui/cdk": "^3.14.0",
+    "@taiga-ui/core": "^3.14.0",
+    "@taiga-ui/icons": "^3.14.0",
+    "@taiga-ui/kit": "^3.14.0",
+    "@taiga-ui/styles": "^3.14.0",
+    "@tinkoff/ng-dompurify": "3.0.0",
+    "@types/semver": "^7.3.13",
+    "dompurify": "2.2.9",
     "rxjs": "~7.5.0",
+    "semver": "^7.3.8",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^15.0.4",
+    "@angular-eslint/builder": "15.1.0",
+    "@angular-eslint/eslint-plugin": "15.1.0",
+    "@angular-eslint/eslint-plugin-template": "15.1.0",
+    "@angular-eslint/schematics": "15.1.0",
+    "@angular-eslint/template-parser": "15.1.0",
     "@angular/cli": "^15.0.4",
     "@angular/compiler-cli": "^15.0.4",
+    "@types/dompurify": "2.2.3",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
+    "@typescript-eslint/eslint-plugin": "5.44.0",
+    "@typescript-eslint/parser": "5.44.0",
     "angular-cli-ghpages": "^1.0.5",
+    "eslint": "^8.28.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.4",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
     "jasmine-core": "~4.0.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.2",
     "typescript": "~4.8.4"
   }
 }
