@@ -6,15 +6,15 @@ import { AuthService } from 'src/app/modules/auth/services/auth.service'
   templateUrl: './feed.component.html',
   styleUrls: ['./feed.component.scss'],
 })
-export class FeedComponent {
-  // constructor(public auth: AuthService) {}
-  // ngOnInit(): void {
-  //   // this.auth
-  //   //   .signIn({
-  //   //     email: 'sladkiysous@gmail.com',
-  //   //     username: 'corvusLoh',
-  //   //     password: '2281337',
-  //   //   })
-  //   //   .subscribe((res) => console.log(res));
-  // }
+export class FeedComponent implements OnInit {
+  constructor(public auth: AuthService) {}
+  ngOnInit(): void {
+    this.auth
+      .signIn({
+        email: 'sladkiysous@gmail.com',
+        username: 'corvusLoh',
+        password: '2281337',
+      })
+      .subscribe((res) => console.log(res))
+  }
 }
