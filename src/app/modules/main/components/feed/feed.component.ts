@@ -13,7 +13,7 @@ export class FeedComponent implements OnInit {
       .signIn({
         email: 'sladkiysous@gmail.com',
         username: 'corvusLoh',
-        password: '2281337',
+        password: 'UserUser123',
       })
       .subscribe((res) => console.log(res))
   }
